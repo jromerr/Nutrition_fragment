@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nutrition.AddFoodActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calories Remaining"
+            android:textSize="24sp"
+            android:textColor="@color/darkGray"/>
+        <TextView
+            android:id="@+id/tvCaloriesRemaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="####"
+            android:textSize="24sp"
+            android:textColor="@color/darkGray"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="24dp"
+            android:paddingTop="14dp"
+            android:text="Breakfast"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/darkGray"
+            android:background="@drawable/bar_shape_gray" />
+        <Button
+            android:id="@+id/bAddBreakfast"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bar_shape_gray"
+            android:text="+ Add Food"
+            android:textAlignment="textStart"
+            android:textColor="@color/darkGray"
+            android:textSize="22sp"
+            app:backgroundTint="@null" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="24dp"
+            android:paddingTop="14dp"
+            android:text="Lunch"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/darkGray"
+            android:background="@drawable/bar_shape_gray" />
+        <Button
+            android:id="@+id/bAddLunch"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bar_shape_gray"
+            android:text="+ Add Food"
+            android:textAlignment="textStart"
+            android:textColor="@color/darkGray"
+            android:textSize="22sp"
+            app:backgroundTint="@null" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="24dp"
+            android:paddingTop="14dp"
+            android:text="Dinner"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/darkGray"
+            android:background="@drawable/bar_shape_gray" />
+        <Button
+            android:id="@+id/bAddDinner"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bar_shape_gray"
+            android:text="+ Add Food"
+            android:textAlignment="textStart"
+            android:textColor="@color/darkGray"
+            android:textSize="22sp"
+            app:backgroundTint="@null" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="24dp"
+            android:paddingTop="14dp"
+            android:text="Snacks"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/darkGray"
+            android:background="@drawable/bar_shape_gray" />
+        <Button
+            android:id="@+id/bAddSnack"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bar_shape_gray"
+            android:text="+ Add Food"
+            android:textAlignment="textStart"
+            android:textColor="@color/darkGray"
+            android:textSize="22sp"
+            app:backgroundTint="@null" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="24dp"
+            android:text="Water"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:background="@drawable/bar_shape_gray" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="610dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <Button
+            android:id="@+id/b8oz"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_shape_sharp_square"
+            android:text="+ 8 oz"
+            android:textColor="@color/darkGray"
+            android:textSize="18sp"
+            app:backgroundTint="@null"/>
+        <Button
+            android:id="@+id/b12oz"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_shape_sharp_square"
+            android:text="+ 12 oz"
+            android:textColor="@color/darkGray"
+            android:textSize="18sp"
+            app:backgroundTint="@null"/>
+        <Button
+            android:id="@+id/b16oz"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_shape_sharp_square"
+            android:text="+ 16 oz"
+            android:textColor="@color/darkGray"
+            android:textSize="18sp"
+            app:backgroundTint="@null" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="660dp"
+        android:background="@drawable/baseline_arrow_back_24"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@id/linearLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
